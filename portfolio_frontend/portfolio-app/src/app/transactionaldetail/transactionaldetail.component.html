@@ -1,0 +1,41 @@
+<div>
+    <h1>Transactional of Portfolio {{id}}</h1>
+    <div style="float: right;">
+        <input type="date" #date>
+        <input (click)="fetchByDate(date.value)" type="submit">
+    </div>
+    <br>
+    <br>
+    <div>
+        <table>
+            <thead>
+                    <tr>
+                        <th><i></i></th>
+                        <th>Name</th>
+                        <th>type</th>
+                        <th>Date</th>
+                        <th>Shares</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr  *ngFor="let transaction of transactionalDetail.transactions">
+                        <td class=" text-left" width="20"><input type="checkbox"></td>
+                        <td>Security {{ transaction.securityId }}</td>
+                        <td>{{ transaction.type }}</td>
+                        <td>{{transaction.date | date: 'yyyy/MM/dd'}}</td>
+                        <td>{{ transaction.amount/transaction.price | number }}</td>
+                        <td>{{ transaction.price }}</td>
+                        <td>{{ transaction.amount }}</td>    
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button (click)="homePage()">Back</button>
+    </div>
+</div>
+
+
