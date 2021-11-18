@@ -1,0 +1,24 @@
+Steps to Run Application
+
+#Backend(running on port 3000)
+1. cd portfolios_assignment
+2. npm install
+3. npm start
+
+api end points
+1. http://localhost:3000/portfolios
+2. http://localhost:3000/portfolio/details/1?date=2019-06-2
+
+
+
+Note:- check authorization key in .env file
+
+
+
+#FrontEnd
+1. cd portfolio_frontend/portfolio_app
+2. npm install
+3. ng serve
+4. localhost:4200
+
+
