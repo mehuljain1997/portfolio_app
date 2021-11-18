@@ -1,3 +1,7 @@
+Prerequisites:-
+1. Node: 12.18.3
+2. Angular CLI: 10.1.7
+
 Steps to Run Application
 
 #Backend(running on port 3000)
@@ -16,7 +20,8 @@ Note:- check authorization key in .env file
 
 
 #FrontEnd
-1. cd portfolio_frontend/portfolio_app
+1. cd portfolio_frontend
+2. cd portfolio-app
 2. npm install
 3. ng serve
 4. localhost:4200
